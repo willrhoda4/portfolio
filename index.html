@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html lang="english">
+<html lang="en">
     
     <head>
         <title>6tiles Creative Studio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@300&family=Roboto:wght@700&family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+        <link href="reset.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
+       
     </head>
 
     <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#work-samples">Work Samples</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Reach Out</a></li>
+                </ul>
+            </nav>
+        </header>
+
         
         <section class="title">
             <div id="title-content" class="wrapper">
@@ -21,9 +34,193 @@
                     <div class="black-tile"></div>
                     <div class="orange-tile"></div>
                 </div>
-                <h1>6tiles Creative Studio</h1>
+                <div class="heading">
+                    <h1>6tiles<br>Creative<br>Studio</h1>
+                </div>
             </div>
         </section>
+
+
+        <section id="info">
+            <h2>Info</h2>
+            <div class="container" id="info-container">
+                <div id="bio">
+                    <p>6tiles Creative Studio is a boutique agency based in Winnipeg, Canada, and powered by full-stack software engineer, creative marketer and journeyman electrician <b>William Reginald Rhoda</b>.</p>
+                    <br>
+                    <p>When he isn't crafting clean code or conjuring killer copy, William enjoys listening to old-school rap, studying new-school Buddhism and running.</p>
+                </div>
+                <div id="portrait"></div>
+            </div> 
+        </section>
+
+
+        <section id="work-samples">
+            <h2>Work Samples</h2>
+            <div class="container" id="samples">
+                
+                <div class="sample" id="dharma-bums">
+                    <div class="sample-image"></div>
+                    <div class="sample-info">
+                        <a href="https://willrhoda4.github.io/dharmaBums/"><h3>Peg City<br>Dharma Bums</h3></a>
+                        <br>
+                        <p>This website was designed for a fictional meditation group from my home city.</p>
+                    </div>
+                </div>    
+                
+                <div class="sample" id="splatter">
+                    <div class="sample-image"></div>
+                    <div class="sample-info">
+                        <a href="https://willrhoda4.github.io/splatters/"><h3>Splatter</h3></a>
+                        <br>
+                        <p>This website was created for a confabulated colour-happy company hailing from who knows where.</p>
+                    </div>    
+                </div>
+                
+              <div class="sample" id="wu-name">
+                    <div class="sample-image"></div>
+                    <div class="sample-info">
+                        <h3>New Wu-Name Generator</h3>
+                        <br>
+                        <p>Inspired by the 90's internet sensation that gave Childish Gambino his name, this generator is ready to bless you with one of 10,000 Wu-Tang-ish monikers. Give it a try!</p>
+                        <form id="wu-form">
+                            
+                            <div id="form-row1">
+                                <label for="fname">first name:&nbsp;</label>
+                                <input type="text" name="fname" id="fname">
+
+                                <label for="lname">&nbsp;last name:&nbsp;</label>
+                                <input type="text" name="lname" id="lname">
+                            </div>    
+                                
+                            <div id="form-row2">
+                                <label for="birth-month">birthday:&nbsp;</label>
+                                <select name="birth-month" id="birth-month">
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+
+                                <span style="opacity:0;">W</span>
+                                <select name="birth-day" id="birth-day">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>f
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                            </div>
+
+                            <div id="form-row3">
+                                <button id="wu-button" type="button">What's my new Wu-name?</button>
+                            </div>
+                        </form>
+                        <p id="wu-name-dispenser">It's only a little buggy!</p>
+                    </div>    
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="education">
+            
+            <h2>Education</h2>
+
+            <div class="container" id="education-container">
+                
+                <div id="programs">
+                    <div class="codecademy program-image" id="codecademy-icon">
+                        <img src="images/icon-code.png" alt="a white angle-bracket icon">
+                    </div>
+                    <h4 class="program codecademy" id="codecademy-info">Full-Stack Engineer<br>Codecademy<br>2021-Present</h4>
+                    
+                    <div class="program-image crecomm" id="crecomm-icon">
+                        <img src="images/icon-communication.png" alt="a white text-bubble icon">
+                    </div>
+                    <h4 class="program crecomm" id="crecomm-info">Creative Communications<br>Red River College<br>2017-2019</h4>
+                    
+                    <div class="program-image electrical" id="electrical-icon">
+                        <img src="images/icon-electrician.png" alt="a white lightning-bolt icon">
+                    </div>
+                    <h4 class="program electrical" id="electrical-info">Construction Electrician<br>Red River College<br>2011-2015</h4>
+                </div>
+
+                <div id="course-description">
+                    <p id="codecademy-description">Fluent in HTML, CSS and Javascript, and well-versed in SEO best practices</p>
+                    <p id="crecomm-description">Majored in marketing and advertising and won that scholarship thing</p>
+                    <p id="electrical-description">Won't install four pot lights in your kitchen, but will light up your digital marketing</p>
+                </div>
+
+            </div>
+   
+        </section>
+
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <div class="container" id="contact-container">
+
+                    <form class="form" id="contact-form">
+                            
+                        <div id="client-info">
+                            <label for="name">name:&nbsp;</label>
+                            <input type="text" name="name" id="name">
+
+                            <label for="email">email</label>
+                            <input type="text" name="email" id="email">
+                        </div>  
+                        <div id="client-message">
+                            <textarea rows="15" cols="75" name="cmessage">When I'm actually freelancing, there will be a submit button below.</textarea>
+                        </div>
+                    
+                    </form>
+
+            </div>
+
+        </section>
+
+        <script src="script.js"></script>
+
+       
+
+
+
 
     </body>
 
